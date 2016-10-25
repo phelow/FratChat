@@ -45,6 +45,7 @@ public class DialogLine : MonoBehaviour {
 
     public void LikeClicked()
     {
+        DialogManager.PlayPop();
         m_button.image.color = Color.red;
         m_blurb.CharacterWhoSaidIt.SetState(m_blurb.To);
         m_button.interactable = false;
